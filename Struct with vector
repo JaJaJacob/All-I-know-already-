@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+#include <stdio.h>
+#include <algorithm>
+using namespace std;
+struct First_Vector{
+	vector <int> moj_vector;
+};
+int main(){
+	
+	int x, y;
+	printf("Wprowadz liczbe calkowita: \n");
+	scanf("%d", &x);
+	First_Vector Wektor1;
+	
+	for(int i=0; i<x; i++)
+	{
+		scanf("%d", &y);
+		Wektor1.moj_vector.push_back(y);
+	}
+	
+	for(int j=0; j<x; j++)
+	{
+		printf("%d", Wektor1.moj_vector[j]);
+	}
+	
+	
+}
